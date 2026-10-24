@@ -1,6 +1,6 @@
 PASOS PARA ENTAR AL SERVIDOR WEB
 
-PASO 1: para instalar nuestro httpd hay que poner el comando "sudo dnf install httpd
+PASO 1: para instalar nuestro httpd hay que poner el comando "sudo dnf install httpd"
 
 
 PASO 2: para ver la version de nuestra pagina hay que colocar el comando "httpd -v"
