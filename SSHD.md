@@ -4,6 +4,8 @@ EVIDENCIAS
 Integrantes: Francisco Morillo y Esteban Nievencela
 
 Cambiar de puerto 22 a 2237
+
+
 Paso 1: Para cambiar de puerto hay que saber el ip en el Centos utilizamos el comadno : ip a
 
 
