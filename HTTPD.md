@@ -18,7 +18,16 @@ PASO 4: Si aparece que esta dead esta desabilitado, para habilitar se coloca el 
 PASO 5: Vemos si esta la pagina habilitada atravez de nuestra Maquina Virtual en el navegador buscando 127.0.0.1, si funciona es que si esta activo pero al abrir en nuestro navegador de nuestro sistema operativo nativo no va a aparecer funcionando.
 
 
-PASO 6: Para habilitar nuestra pagina web completamente vamos a darle accesos a nuestra firewall atravez del uso de comandos "sudo firewall-cmd - -all-service-http - - permanent" como primer comando para desactivar el firewall, segundo el “sudo firewall-cmd - -reload” para recargar el firewall y como ultimo el “sudo firewall-cmd - -list-all” para ver si esta en la lista que ya se desactivo
+PASO 6: Para habilitar nuestra pagina web completamente vamos a darle accesos a nuestra firewall atravez del uso de comandos "sudo firewall-cmd - -all-service-http - - permanent" 
+
+
+como primer comando para desactivar el firewall, 
+
+
+segundo el “sudo firewall-cmd - -reload” para recargar el firewall
+
+
+y como ultimo el “sudo firewall-cmd - -list-all” para ver si esta en la lista que ya se desactivo
 
 
 <img width="938" height="527" alt="image" src="https://github.com/user-attachments/assets/ceff4c03-b57e-48ea-856f-d7858db1f425" />
