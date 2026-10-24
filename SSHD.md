@@ -6,7 +6,7 @@ Integrantes: Francisco Morillo y Esteban Nievencela
 Cambiar de puerto 22 a 2237
 
 
-Paso 1: para cambiar de puerto hay que saber el ip en el Centos utilizamos el comadno : ip a
+paso 1: para cambiar de puerto hay que saber el ip en el Centos utilizamos el comadno : ip a
 
 
 paso 2: para modificar el puerto : sudo nano /etc/ssh/ssh_config
