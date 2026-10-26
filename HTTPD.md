@@ -31,3 +31,6 @@ y como ultimo el “sudo firewall-cmd - -list-all” para ver si esta en la list
 
 
 <img width="938" height="527" alt="image" src="https://github.com/user-attachments/assets/ceff4c03-b57e-48ea-856f-d7858db1f425" />
+
+
+PASO 7: para editar en la pagina httpd, dentro del CentOS en la terminal colocamos sudo nano/usr/share/httpd/no index/index - - Html
