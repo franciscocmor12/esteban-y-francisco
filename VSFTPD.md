@@ -1,5 +1,8 @@
 Habilitar e iniciar el servicio:
+
+
 bash
+
 1.sudo systemctl enable vsftpd --now
 
 2.realizar una copia   sudo cp /etc/vsftpd/vsftpd.conf /etc/vsftpd.conf.backup
