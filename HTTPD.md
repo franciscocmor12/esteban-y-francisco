@@ -15,7 +15,7 @@ PASO 4: Si aparece que esta dead esta desabilitado, para habilitar se coloca el 
 <img width="936" height="482" alt="image" src="https://github.com/user-attachments/assets/9f0b03e8-c271-407e-b239-7a15e7283548" />
 
 
-PASO 5: Vemos si esta la pagina habilitada atravez de nuestra Maquina Virtual en el navegador buscando 127.0.0.1, si funciona es que si esta activo pero al abrir en nuestro navegador de nuestro sistema operativo nativo no va a aparecer funcionando.
+PASO 5: Ahora para ver el estado del servidor de nuestra pagina web colocamos el comando "sudo systemctl status httpd" Vemos si esta la pagina habilitada atravez de nuestra Maquina Virtual en el navegador buscando 127.0.0.1, si funciona es que si esta activo pero al abrir en nuestro navegador de nuestro sistema operativo nativo no va a aparecer funcionando, para esto usamos el comando.
 
 
 PASO 6: Para habilitar nuestra pagina web completamente vamos a darle accesos a nuestra firewall atravez del uso de comandos "sudo firewall-cmd - -all-service-http - - permanent" 
