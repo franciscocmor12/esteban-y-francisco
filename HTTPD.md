@@ -32,4 +32,4 @@ Y, como último, el “sudo firewall-cmd --list-all” para ver si está en la l
 
 
 PASO 8: para editar en la página httpd, dentro del CentOS en la terminal colocamos 
-sudo nano /usr/share/httpd/noindex/index.html
+"sudo nano /usr/share/httpd/noindex/index.html"
