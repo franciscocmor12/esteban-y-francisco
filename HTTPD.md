@@ -31,5 +31,5 @@ Y, como último, el “sudo firewall-cmd --list-all” para ver si está en la l
 <img width="938" height="527" alt="image" src="https://github.com/user-attachments/assets/ceff4c03-b57e-48ea-856f-d7858db1f425" />
 
 
-PASO 8: para editar en la página httpd, dentro del CentOS en la terminal colocamos 
+Paso 8: para editar en la página httpd, dentro del CentOS en la terminal colocamos 
 "sudo nano /usr/share/httpd/noindex/index.html"
