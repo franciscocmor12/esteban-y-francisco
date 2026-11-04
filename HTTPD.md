@@ -15,7 +15,7 @@ Paso 4: Si aparece la palabra dead, está deshabilitado; para habilitarlo, se co
 <img width="936" height="482" alt="image" src="https://github.com/user-attachments/assets/9f0b03e8-c271-407e-b239-7a15e7283548" />
 
 
-Paso 5: Ahora, para ver el estado del servidor de nuestra página web, colocamos el comando "sudo systemctl status httpd". Vemos si la página está habilitada a través de nuestra máquina virtual en el navegador buscando 127.0.0.1; si funciona, es que sí está activo, pero al abrir en el navegador de nuestro sistema operativo nativo no va a aparecer funcionando; para esto usamos el comando.
+Paso 5: Ahora, para ver el estado del servidor de nuestra página web, colocamos el comando "sudo systemctl status httpd". Vemos si la página está habilitada a través de nuestra máquina virtual en el navegador buscando 127.0.0.1; si funciona, es que sí está activo, pero al abrir en el navegador de nuestro sistema operativo nativo no va a aparecer funcionando.
 
 Paso 6: Ahora tenemos que ver el listado completo para verificar que el servicio httpd esté correctamente aplicado usando el comando "sudo firewall-cmd --list-all"
 
