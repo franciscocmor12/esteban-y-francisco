@@ -15,7 +15,7 @@ PASO 2: para modificar el puerto : sudo nano /etc/ssh/ssh_config
 PASO 3: aqui buscamos el apartado que dice #port 22 , y le boro el # y coloco mi puerto personalizado 2237 quedando port 2237 
 
 
-PASO 4: bloquea por defecto cualquier puerto SSH que no sea el 22 sudo manage port -a -t ssh_port_t -p tcp
+PASO 4: bloquea por defecto cualquier puerto SSH que no sea el 22 sudo semanage port -a -t ssh_port_t -p tcp
 
 
 PASO 5: permite que las conexiones entrantes dirigidas al puerto p. 2237  sudo firewall-cmd --zone public --permanent --add-port 2237/tcp
