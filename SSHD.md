@@ -30,5 +30,3 @@ paso 7: para recargar la nueva configuracione sshd: sudo systemctl restart sshd
 PASO 8: para ver el estado actual del sshd:  sudo systemctl status sshd
 
 
-
-<img width="600" height="473" alt="image" src="https://github.com/user-attachments/assets/f046d63e-8ce6-44fd-98a0-d9077cdd3d23" />
