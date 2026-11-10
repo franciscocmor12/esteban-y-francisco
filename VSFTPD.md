@@ -28,10 +28,10 @@ sudo nano /etc/vsftpd/vsftpd.conf
 
 entramos y eliminamos el simbolo # donde dice chroot_local_user=YES
 
-crtl+o  , crtl+x para guardar y salir
+crtl+o enter , crtl+x para guardar y salir
 
 
-entramos al terminal del CentOS y verificamos el serivicio ftp localhost , si nos sale no encontrada temenos que instalarlo colocando y , ademas nos saldra otra vez colocamos y y luego verificamso de nuevo con el commando local host y ahora si nos saldra name y colocamos el usuario nuestro de la misma manera colocamos la contraseña , y nos salgra 230 login successful
+Hacemos ctrl+alt+t para ingresar ala terminal del CentOS y verificamos el serivicio ftp localhost , si nos aparece tendremos que instalarlo nuevamente y seleccionamos y/n para seguir , nos saldra otra vez para confirmar y/n y luego verificamos de nuevo con el comando local host  Nos tendra que salir name y colocamos el usuario nuestro (ejemplo@ejemplo) de la misma manera colocamos la contraseña , y nos salgra 230 login successful
 entramos al maxterm:
 
 
