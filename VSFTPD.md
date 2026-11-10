@@ -77,5 +77,5 @@ ademas de la contraseña
 y nos deberia salir 230 login successful
 
 
-con estos paso engtrasmo al moba y colocamso el servicio ftp , introduccimso la ip, usuario y Puerto 21 ademas de la contraseña qye colocamos en el terminal de CentOS
+con estos paso engtrasmo al moba y colocamso el servicio ftp , introduccimso la ip, usuario y Puerto 21 ademas de la contraseña que colocamos en el terminal de CentOS
 
