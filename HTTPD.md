@@ -78,6 +78,7 @@ ANTES DE MODIFICAR HACER UNA COPIA
 
 sudo cp /usr/share/httpd/noindex/index.html /usr/share/httpd/noindex/index.html.backup
 
-
-sudo nano /usr/share/httpd/noindex/index.html
+Comando para entrar y editar:
+sudo nano /usr/share/httpd/noindex/index.html  
+Para guardar los cambios crtl+O , para salir crtl+x 
 
