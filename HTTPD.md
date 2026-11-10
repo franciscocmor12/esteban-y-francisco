@@ -1,33 +1,77 @@
 PASOS PARA ENTRAR AL SERVIDOR WEB
 
-Paso 1: para instalar nuestro httpd hay que poner el comando "sudo dnf install httpd"
+
+sudo dnf install httpd
 
 
-Paso 2: para ver la versión de nuestra página hay que colocar el comando "httpd -v"
+httpd -v
 
 
-Paso 3: Ahora, para ver el estado del servidor de nuestra página web, colocamos el comando "sudo systemctl status httpd"
+sudo systemctl status httpd
 
 
-Paso 4: Si aparece la palabra dead, está deshabilitado; para habilitarlo, se coloca el comando "sudo systemctl start httpd"
+sudo systemctl start httpd
+
+
+sudo systemctl status httpd
+
+
+sudo firewall-cmd –list-all
+
+
+sudo firewall-cmd –add-service=http –permanent
+
+
+sudo firewall-cmd –reload
+
+
+sudo firewall-cmd –list-all
+
+
+target: default
+
+  
+  ingress-priority: 0
+  
+  
+  egress-priority: 0
+  
+  
+  icmp-block-inversion: no
+  
+  
+  interfaces: enp0s3
+  
+  
+  sources:
+  
+  
+  services: cockpit dhcpv6-client http ssh
+  
+  
+  ports: 2234/tcp 2237/tcp
+  
+  
+  protocols:
+  
+  
+  forward: yes
+  
+  
+  masquerade: no
+  
+  
+  forward-ports:
+  
+  
+  source-ports:
+  
+  
+  icmp-blocks:
+  
+  
+  rich rules:
 
 
 
 
-Paso 5: Ahora, para ver el estado del servidor de nuestra página web, colocamos el comando "sudo systemctl status httpd". Vemos si la página está habilitada a través de nuestra máquina virtual en el navegador buscando 127.0.0.1; si funciona, es que sí está activo, pero al abrir en el navegador de nuestro sistema operativo nativo no va a aparecer funcionando.
-
-Paso 6: Ahora tenemos que ver el listado completo para verificar que el servicio httpd esté correctamente aplicado usando el comando "sudo firewall-cmd --list-all"
-
-Paso 7: Para habilitar nuestra página web completamente, --add-service=http --permanent firewall usamos el comando "sudo firewall-cmd --add-service=http --permanent"  
-
-
-Ahora recargamos la página usando el comando "sudo firewall-cmd --reload” para recargar el firewall.
-
-
-Y, como último, el “sudo firewall-cmd --list-all” para ver si está en la lista.
-
-
-
-
-Paso 8: para editar en la página httpd, dentro del CentOS en la terminal colocamos 
-"sudo nano /usr/share/httpd/noindex/index.html"
