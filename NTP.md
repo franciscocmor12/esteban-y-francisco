@@ -116,13 +116,13 @@ pool pool.ntp.org iburst
 
 
 Después agrega al final del archivo:
-# Permitir clientes de la red local
+Permitir clientes de la red local
 allow 192.168.1.0/24
 
-# Ajustar el reloj al iniciar
+Ajustar el reloj al iniciar
 makestep 1.0 3
 
-# Sincronizar el reloj de hardware
+Sincronizar el reloj de hardware
 rtcsync
 
 
