@@ -32,41 +32,79 @@ crtl+o enter , crtl+x para guardar y salir
 
 
 Hacemos ctrl+alt+t para ingresar ala terminal del CentOS y verificamos el serivicio ftp localhost , si nos aparece tendremos que instalarlo nuevamente y seleccionamos y/n para seguir , nos saldra otra vez para confirmar y/n y luego verificamos de nuevo con el comando local host  Nos tendra que salir name y colocamos el usuario nuestro (ejemplo@ejemplo) de la misma manera colocamos la contraseña , y nos salgra 230 login successful
-entramos al maxterm:
 
+
+Entramos al mobaXterm:
+
+Para ver el listado completo usamos
 
 sudo firewall-cmd –list-all
-aqui revisamoq que solo temenos el serivicio http y ssh , para actviar el ftp continuamos con estos commandos:
 
 
-sudo firewall-cmd –add-service=ftp
+Aqui revisamos que solo temenos el serivicio http y ssh , para actviar el ftp continuamos con estos commandos:
 
 
-sudo firewall-cmd –list-all  , verificamos de nuevo y ya nos saldra el serivicio
+sudo firewall-cmd –add-service=ftp --permanent
+
+
+Verificamos de nuevo y ya nos saldra el serivicio
+
+
+sudo firewall-cmd --list-all
 
  
- tail /etc/passwd    para verificar    los usuarios recien creados
+Para verificar los usuarios recien creados
+
+tail/etc/passwd
+
+Para crear una nueva cuenta de usuario
 
 
-sudo adduser usuario_ftp      sirve para crear una nueva cuenta de usuario
+sudo adduser usuario_ftp 
 
 
-sudo usermod -s /sbin/nologin usuario_ftp sirve para desactivar el acceso interactivo al sistema para el usuario
+Comando para colocar nuevamente la contraseña
 
 
-sudo cat /etc/shells sirve para mostrar la lista completa de intérpretes de comandos (shells) válidos y permitidos
+sudo adduser usuario_ftp
 
 
-El comando sudo nano /etc/shells abre el editor de texto en terminal nano con permisos de superusuario 
+Para desactivar el acceso interactivo al sistema para el usuario
 
 
-Entramos a una lista y colocamos en la parte final  /sbin/nologin , crtl+o  , crtl+x 
+sudo usermod -s /sbin/nologin usuario_ftp
+
+
+Para mostar la lista de interpretes de comandos (shells) validos y permitidos
+
+
+sudo cat /etc/shells
+
+
+Para abrir el editor de texto en la terminal de nano usamos el superusuario.
+
+
+sudo nano /etc/shells 
+
+
+Entramos a una lista y colocamos en la parte final  
+
+
+/sbin/nologin , 
+
+
+crtl+o para confirmar mas el enter , crtl+x para salir
+
+Revisamos con el comando
 
 
 ftp localhost
 
 
-colocamos el usuario creado en este caso usuario_ftp
+colocamos el usuario creado en este caso 
+
+
+usuario_ftp
 
 
 ademas de la contraseña
@@ -75,5 +113,5 @@ ademas de la contraseña
 y nos deberia salir 230 login successful
 
 
-con estos paso entramos al moba y colocamos el servicio ftp , introduccimos la ip, usuario y Puerto 21 ademas de la contraseña que colocamos en el terminal de CentOS
+con estos paso entramos al MobaxTerm y colocamos el servicio ftp , introduccimos la ip, usuario y Puerto 21 ademas de la contraseña que colocamos en el terminal de CentOS
 
