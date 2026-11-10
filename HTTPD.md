@@ -73,5 +73,11 @@ target: default
   rich rules:
 
 
+ANTES DE MODIFICAR HACER UNA COPIA
 
+
+sudo cp /usr/share/httpd/noindex/index.html /usr/share/httpd/noindex/index.html.backup
+
+
+sudo nano /usr/share/httpd/noindex/index.html
 
