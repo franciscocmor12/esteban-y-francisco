@@ -66,7 +66,7 @@ Entramos a una lista y colocamos en la parte final  /sbin/nologin , crtl+o  , cr
 ftp localhost
 
 
-colcoamos el usuario creado en este caso usuario_ftp
+colocamos el usuario creado en este caso usuario_ftp
 
 
 ademas de la contraseña
@@ -75,5 +75,5 @@ ademas de la contraseña
 y nos deberia salir 230 login successful
 
 
-con estos paso entramos al moba y colocamos el servicio ftp , introduccimso la ip, usuario y Puerto 21 ademas de la contraseña que colocamos en el terminal de CentOS
+con estos paso entramos al moba y colocamos el servicio ftp , introduccimos la ip, usuario y Puerto 21 ademas de la contraseña que colocamos en el terminal de CentOS
 
