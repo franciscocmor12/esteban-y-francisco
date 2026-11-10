@@ -17,18 +17,16 @@ sudo systemctl status vsftpd
 
 ls /etc/vsftpd/
 
-
+Antes de modificar, se realiza una copia con el siguiente comando:
 sudo cp /etc/vsftpd/vsftpd.conf /etc/vsftpd/vsftpd.conf.backup
 
-
+Ver si se creo la copia:
 ls /etc/vsftpd/
 
-
+Entramos para poder editar:
 sudo nano /etc/vsftpd/vsftpd.conf
 
-
-entramos y eliminamos el # donde dice chroot_local_user=YES
-
+entramos y eliminamos el simbolo # donde dice chroot_local_user=YES
 
 crtl+o  , crtl+x para guardar y salir
 
